@@ -1,0 +1,39 @@
+#include <iostream>
+#include <string>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+    int choice, tic_count;
+    string seatname[5];
+    cout << setw(40) << "***WELCOME TO MOVIE TICKET BOOKING PROGRAM***" << endl;
+    cout << "Movie List:-" << endl;
+    cout << "1.ANIMAL\n"
+         << "2.AquaMan\n"
+         << "3.SpiderMan\n"
+         << "4.Koi Mil Gya\n"
+         << endl;
+         
+    cout << "Enter the Choice: ";
+    cin >> choice;
+    cout << "\nEnter Number of ticket: ";
+    cin >> tic_count;
+
+    cout<<"1a"<<" "<<"2a"<<" "<<"3a "<<endl;
+    cout<<"4b"<<" "<<"5b"<<" "<<"6b "<<endl;
+    cout<<"7c"<<" "<<"8c"<<" "<<"9c "<<endl;
+    cout<<"10d"<<" "<<"11d"<<" "<<"12d"<<endl;
+    cout<<"13e"<<" "<<"14e"<<" "<<"15e"<<endl;
+
+    for (int i = 1; i <= tic_count; i++)
+    {
+        cout << "Choose Your " << i << ". seat:";
+        cin >> seatname[i];
+    }
+
+    cout << "\nBooking Confirmed" << endl;
+    cout << "Total Ticket cost: " << tic_count * 250 << endl;
+    cout << "Collect Ticket and Pay at counter :> " << endl;
+    return 0;
+}
